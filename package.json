@@ -1,0 +1,29 @@
+{
+  "name": "alexa-express-async",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "alexa-app": "^4.2.2",
+    "axios": "^0.18.0",
+    "body-parser": "^1.17.2",
+    "eslint": "^4.19.1",
+    "eslint-config-strongloop": "^2.1.0",
+    "express": "^4.15.4",
+    "helmet": "^3.8.1",
+    "mocha": "^5.2.0",
+    "morgan": "^1.8.2",
+    "rewire": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "pretest": "eslint --ignore-path .eslintignore .",
+    "test": "mocha"
+  },
+  "author": "whatitis",
+  "license": "MIT",
+  "description": "Example Alexa + Express + Request (async) app",
+  "repository": {
+    "type": "git",
+    "url": "https://git.iq.it.umich.edu/whatitis/alexa-express-async.git"
+  }
+}
