@@ -57,17 +57,13 @@ exports.getNorrisWisdom = async function(alexaRes) {
 };
 
 exports.getFortune = async function(alexaRes) {
-  // The high end of the range (543) appears to be the end of
-  // the sequence of fortunes.
-  let num = getRandomNum(0, 543);
   let opt = {
-    url: 'http://fortunecookieapi.herokuapp.com/v1/fortunes' +
-      '?limit=1&skip=' + num,
+    url: 'https://api.ef.gy/fortune',
     responseType: 'json',
   };
   try {
     let res = await axios(opt);
-    return alexaRes.say(res.data[0].message);
+    return alexaRes.say(res.data);
   } catch (err) {
     console.log('Caught: ' + err);
     return alexaRes.say(getGeneralErrorDialog());

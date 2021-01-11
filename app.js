@@ -89,7 +89,7 @@ AlexaApp.intent('GetWisdom', {
 function(req, res) {
   let promise = f.getNorrisWisdom(res);
   return promise;
-}
+},
 );
 
 AlexaApp.intent('GetFortune', {
@@ -100,7 +100,7 @@ AlexaApp.intent('GetFortune', {
 function(req, res) {
   let promise = f.getFortune(res);
   return promise;
-}
+},
 );
 
 // Print intents and utterances so that they can be plugged into

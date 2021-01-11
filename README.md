@@ -3,10 +3,10 @@
 Set up an Express.js-based endpoint for Alexa. Pleasant alternative to AWS Lambda.
 
 This example application supports a couple intents:
-* Fortunes (thanks to http://fortunecookieapi.herokuapp.com/)
+* Fortunes (thanks to https://github.com/ef-gy/fortuned)
 * Chuck Norris "facts" (thanks to https://api.chucknorris.io/)
 
-Tested with [Node.js v8 LTS](https://nodejs.org/en/).
+Tested with [Node.js v14 LTS](https://nodejs.org/en/).
 
 ## Configure HTTP server and application path
 
